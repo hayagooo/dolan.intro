@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Lan - Transportation</title>
+
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/slick-theme.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+    <header class="nav-fixed shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand mx-4 mt-1" href="#">
+                <div class="d-flex">
+                    <img src="../img/favicon.png" class="mr-1" width="40px" height="40px" alt="">
+                    <div class="greeny">
+                        <h4 class="my-0 py-0" id="app_name">Do Lan</h4>
+                        <p class="my-0 py-0 slogan-nav">Happy Tourism</p>
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-center">
+                    <li class="nav-item nav-menu">
+                        <a class="nav-link" href="../../index.html">HOME</a>
+                    </li>
+                    <li class="nav-item nav-menu">
+                        <a class="nav-link" href="../page/destinasi.html">DESTINATION</a>
+                    </li>
+                    <li class="nav-item nav-menu">
+                        <a class="nav-link" href="../page/hotel.html">HOTELS</a>
+                    </li>
+                    <li class="nav-item nav-menu active active-nav">
+                        <a class="nav-link" href="../page/transport.html">TRANSPORT</a>
+                    </li>
+                    <li class="nav-item nav-menu">
+                        <a class="nav-link" href="../page/news.html">NEWS</a>
+                    </li>
+                    <li class="nav-item nav-menu">
+                        <a class="nav-link" href="#contact_content">CONTACT</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <i class="fa fa-search" id="nav-search" aria-hidden="true"></i>
+                    </li>
+                     <!-- <li class="nav-item mt-2">
+                        <button class="btn shadow text-white btn-sm px-4 btn-greeny rounded-pill" onclick="window.location.href='assets/page/signin.html'">Sign in</button>
+                        <button class="btn border border-success text-dark btn-sm px-4 rounded-pill" id="btn-signup" onclick="window.location.href='assets/page/signup.html'">Sign up</button>
+                    </li> -->
+                    <li class="nav-item dropdown d-inline-block user_auth">
+                        <div class=""  href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <h6 class="d-inline position-relative mr-2 ml-3" style="top: -15px;">
+                                Khusnul
+                            </h6>
+                            <div class="position-relative d-inline-block mr-3 auth overflow-hidden rounded-circle">
+                                <img src="../img/pengembang.JPG" class="h-100 d-inline-block" alt="">
+                            </div>
+                        </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item py-2" href="#"><i class="fas fa-user mr-2"></i>Profilku</a>
+                            <a class="dropdown-item py-2 border-bottom" href="#"><i class="fas fa-cogs mr-2"></i>Settings</a>
+                            <a class="dropdown-item py-2 text-danger href="#"><i class="fas fa-sign-out-alt mr-2"></i>Logout</a>
+                        </div>
+                    </li>
+                  </ul>
+            </div>
+        </nav>
+        <div class="search_bar bg-success shadow-sm">
+            <div class="col-sm-6 offset-sm-3">
+                <div class="form-group m-0 p-1 bg-real rounded-pill overflow-hidden border-0 w-100 shadow position-relative" style="top: 10px"> 
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="form-group border-0 mb-0 py-0">
+                                <input type="text" name="" id="search" class="form-control border-0 py-2 px-4 w-100" placeholder="Cari sesuatu..." aria-describedby="helpId">    
+                            </div>
+                        </div>
+                        <div class="col-3 py-0 my-0 text-right">
+                            <button type="submit" class="btn btn-warning px-3 w-75 btn-sm mt-1 mr-1 rounded-pill shadow">
+                                <i class="fas fa-search"></i>  
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid" id="transport_desktop">
+        <div class="row text-center text-white">
+            <div class="col-sm-4 mx-0 bg-success overflow-hidden desktop_transport">
+                <img src="../img/wallpaper/pesawat.jpg" class="position-absolute transport_desktop_img" alt="">
+                <div class="pt-5 mt-4 overflow-hidden position-relative" style="z-index: 10;">
+                    <h3 class="pt-5 pb-5 my-5"><i class="fas fa-plane"></i> Pesawat</h3>
+                </div>
+            </div>
+            <div class="col-sm-4 mx-0 bg-success overflow-hidden desktop_transport">
+                <img src="../img/wallpaper/keretaApi.jpg" class="position-absolute transport_desktop_img" alt="">
+                <div class="pt-5 mt-4 overflow-hidden position-relative" style="z-index: 10;">
+                    <h3 class="pt-5 pb-5 my-5"><i class="fas fa-train"></i> Kereta Api</h3>
+                </div>
+            </div>
+            <div class="col-sm-4 mx-0 bg-success overflow-hidden desktop_transport">
+                <img src="../img/wallpaper/mobil.jpg" class="position-absolute transport_desktop_img" alt="">
+                <div class="pt-5 mt-4 overflow-hidden position-relative" style="z-index: 10;">
+                    <h3 class="pt-5 pb-5 my-5"><i class="fas fa-car"></i> Mobil</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="transport_mobile">
+        <div class="row text-center">
+            <div class="col-4 pt-5 text-center my-5">
+                <div class="rounded shadow-sm position-relative mt-4 p-4 card_transport_mobile">
+                    <div class="position-relative card_transport_mobile_text pt-3">
+                        <i class="fas fa-plane" style="font-size: 1.5rem;"></i>
+                        <h6>Pesawat</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 pt-5 text-center my-5">
+                <div class="rounded shadow-sm position-relative mt-4 p-4 card_transport_mobile">
+                    <div class="position-relative card_transport_mobile_text pt-3">
+                        <i class="fas fa-train" style="font-size: 1.5rem;"></i>
+                        <h6>Kereta Api</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 pt-5 text-center my-5">
+                <div class="rounded shadow-sm position-relative mt-4 p-4 card_transport_mobile">
+                    <div class="position-relative card_transport_mobile_text pt-3">
+                        <i class="fas fa-car-alt" style="font-size: 1.5rem;"></i>
+                        <h6>Mobil</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="rounded my-4 bg-real shadow w-100 position-relative p-4">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="form-group position-relative">
+                                <label for="berangkat">Kota Asal</label>
+                                <div class="rounded-circle bg-primary text-center text-white position-absolute to_sticker">
+                                    <i class="fas fa-arrows-alt-h" id="my_arrow_h"></i>
+                                    <i class="fas fa-arrows-alt-v" id="my_arrow_v"></i>
+                                    
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-prepend bg-real mb-sm-2 mb-2">
+                                        <div class="input-group-text bg-real border-right-0 border-r-0" id="view">
+                                            <i class="fas fa-plane-departure greeny"></i>
+                                        </div>
+                                    </div>
+                                    <input type="text" name="berangkat" id="berangkat" class="mb-sm-2 mb-2 form-control border-l-0" placeholder="Kota asal">   
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <label for="tujuan">Kota Tujuan</label>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend bg-real mb-sm-2 mb-2">
+                                        <div class="input-group-text bg-real border-right-0 border-r-0" id="view">
+                                            <i class="fas fa-plane-arrival greeny"></i>
+                                        </div>
+                                    </div>
+                                    <input type="text" name="tujuan" id="tujuan" class="mb-sm-2 mb-2 form-control border-l-0" placeholder="Kota Tujuan">   
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="form-group">
+                                <label for="">Jumlah Penumpang</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend bg-real mb-sm-2 mb-2">
+                                        <div class="input-group-text bg-real border-right-0 border-r-0" id="view">
+                                            <i class="fas fa-users greeny"></i>
+                                        </div>
+                                    </div>
+                                    <input readonly name="kabupaten" id="kabupaten" class="mb-sm-2 mb-2 form-control border-l-0 bg-real" placeholder="1 Dewasa, 0 Anak, 0 Bayi">   
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="form-group position-relative">
+                                <label for="dari_tanggal">Berangkat</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend bg-real mb-sm-2 mb-2">
+                                        <div class="input-group-text bg-real border-right-0 border-r-0" id="view">
+                                            <i class="fas fa-calendar-alt greeny"></i>
+                                        </div>
+                                    </div>
+                                    <input type="date" name="dari_tanggal" id="dari_tanggal" class="mb-sm-2 mb-2 form-control border-l-0" placeholder="Kota asal">   
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="form-group">
+                                <label for="sampai_tanggal">Pulang</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend bg-real">
+                                        <div class="input-group-text bg-real border-right-0 border-r-0" id="view">
+                                            <i class="fas fa-calendar-alt greeny"></i>
+                                        </div>
+                                    </div>
+                                    <input type="date" name="sampai_tanggal" id="sampai_tanggal" aria-describedby="optionalForm" class="form-control border-l-0" placeholder="Kota Tujuan">   
+                                </div>
+                                <small id="optionalForm" class="text-muted mb-sm-2 mb-2"><i class="fas fa-question-circle text-primary"></i> Optional</small>
+                            </div>    
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <label for="">Kelas Transportasi</label>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend bg-real mb-sm-2 mb-2">
+                                        <div class="input-group-text bg-real border-right-0 border-r-0" id="view">
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <select name="kabupaten" id="kabupaten" class="mb-sm-2 mb-2 form-control border-l-0" placeholder="Cari lokasi tujuan">   
+                                        <option value="">Pilih kelas transportasi</option>
+                                    </select>    
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 offset-md-8">
+                            <button class="btn btn-warning shadow-sm rounded-pill w-100"><i class="fas fa-search"></i> Cari</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container list_maskapai my-3">
+        <div class="row">
+            <div class="col-md-10">
+                <p class="mb-1"><i class="fas fa-search"></i> Hasil Pencarian</p>
+                <h5>Jakarta (Semua bandara) → Bali / Denpasar (DPS)-Ngurah Rai International Airport</h5>
+                <p> 
+                    <span class="badge badge-success p-2">Senin, 09 Maret 2020</span>
+                    <span class="badge badge-success p-2">1 Dewasa</span>
+                    <span class="badge badge-success p-2">Kelas Ekonomi</span>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="shadow-sm w-100 my-1 bg-real rounded overflow-hidden">
+                    <div class="row">
+                        <div class="col-lg-10">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-12 text-center p-4">
+                                    <img src="../img/masakapai/GARUDA_INDONESIA_AIR.png" class="img_maskapai" alt="">
+                                </div>
+                                <div class="col-md-3 col-4 text-center px-4 position-relative">
+                                    <div class="my-3 pt-1">
+                                        <h3 class="mb-1">13:35</h3>
+                                        <p class="text-gray paraph">Jakarta (CGK)</p>
+                                    </div>
+                                    <div class="position-absolute plane_way_icon_set">
+                                        <p class="paraph">
+                                            <i class="fas fa-circle plane_way_icon"></i>
+                                            <i class="fas fa-circle plane_way_icon"></i>
+                                            <i class="fas fa-circle plane_way_icon"></i>
+                                            <i class="fas fa-plane mt-3"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-4 text-center px-4 position-relative">
+                                    <div class="my-3 pt-1">
+                                        <h3 class="mb-1">16:42</h3>
+                                        <p class="text-gray paraph">BALI (DPS)</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-4 text-center px-4 position-relative">
+                                    <div class="my-3 pt-1">
+                                        <h3 class="mb-1">1j 40m</h3>
+                                        <p class="text-gray paraph">Langsung</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mx-4">
+                                <div class="col-12 border-bottom">
+                                    <div class="row">
+                                        <div class="col-6 mx-0 text-center more_info_plane">
+                                            <div class="p-3 paraph">
+                                                Detail Pemberangkatan
+                                            </div>
+                                        </div>
+                                        <div class="col-6 mx-0 text-center more_info_plane">
+                                            <div class="p-3 paraph">
+                                                Info Harga
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="row">
+                                <div class="col-3 col-sm-2">
+                                    <div class="p-3">
+                                        <img src="../img/masakapai/GARUDA_INDONESIA_AIR.png" width="100%" alt="">
+                                        <p class="font-weight-bold paraph">Garuda Indonesia</p>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="col-12 col-md-2 pt-4">
+                            <h6 class="text-center mb-3 mb-md-2">Rp 540.000/org</h6>
+                            <div class="text-center">
+                                <button class="btn btn-warning w-100">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="shadow-sm w-100 my-1 bg-real rounded overflow-hidden">
+                    <div class="row">
+                        <div class="col-lg-10">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-12 text-center p-4">
+                                    <img src="../img/masakapai/Citilink.png" class="img_maskapai" alt="">
+                                </div>
+                                <div class="col-md-3 col-4 text-center px-4 position-relative">
+                                    <div class="my-3 pt-1">
+                                        <h3 class="mb-1">19:30</h3>
+                                        <p class="text-gray paraph">Jakarta (CGK)</p>
+                                    </div>
+                                    <div class="position-absolute plane_way_icon_set">
+                                        <p class="paraph">
+                                            <i class="fas fa-circle plane_way_icon"></i>
+                                            <i class="fas fa-circle plane_way_icon"></i>
+                                            <i class="fas fa-circle plane_way_icon"></i>
+                                            <i class="fas fa-plane mt-3"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-4 text-center px-4 position-relative">
+                                    <div class="my-3 pt-1">
+                                        <h3 class="mb-1">22:30</h3>
+                                        <p class="text-gray paraph">BALI (DPS)</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-4 text-center px-4 position-relative">
+                                    <div class="my-3 pt-1">
+                                        <h3 class="mb-1">2j 01m</h3>
+                                        <p class="text-gray paraph">Langsung</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mx-4">
+                                <div class="col-12 border-bottom">
+                                    <div class="row">
+                                        <div class="col-6 mx-0 text-center more_info_plane">
+                                            <div class="p-3 paraph">
+                                                Detail Pemberangkatan
+                                            </div>
+                                        </div>
+                                        <div class="col-6 mx-0 text-center more_info_plane">
+                                            <div class="p-3 paraph">
+                                                Info Harga
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="row">
+                                <div class="col-3 col-sm-2">
+                                    <div class="p-3">
+                                        <img src="../img/masakapai/GARUDA_INDONESIA_AIR.png" width="100%" alt="">
+                                        <p class="font-weight-bold paraph">Garuda Indonesia</p>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="col-12 col-md-2 pt-4">
+                            <h6 class="text-center mb-3 mb-md-2">Rp 450.000/org</h6>
+                            <div class="text-center">
+                                <button class="btn btn-warning w-100">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="shadow-sm w-100 my-1 bg-real rounded overflow-hidden">
+                    <div class="row">
+                        <div class="col-lg-10">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-12 text-center p-4">
+                                    <img src="../img/masakapai/Wings_Air.png" class="img_maskapai" alt="">
+                                </div>
+                                <div class="col-md-3 col-4 text-center px-4 position-relative">
+                                    <div class="my-3 pt-1">
+                                        <h3 class="mb-1">07:35</h3>
+                                        <p class="text-gray paraph">Jakarta (CGK)</p>
+                                    </div>
+                                    <div class="position-absolute plane_way_icon_set">
+                                        <p class="paraph">
+                                            <i class="fas fa-circle plane_way_icon"></i>
+                                            <i class="fas fa-circle plane_way_icon"></i>
+                                            <i class="fas fa-circle plane_way_icon"></i>
+                                            <i class="fas fa-plane mt-3"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-4 text-center px-4 position-relative">
+                                    <div class="my-3 pt-1">
+                                        <h3 class="mb-1">10:35</h3>
+                                        <p class="text-gray paraph">BALI (DPS)</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-4 text-center px-4 position-relative">
+                                    <div class="my-3 pt-1">
+                                        <h3 class="mb-1">2j 0m</h3>
+                                        <p class="text-gray paraph">Langsung</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mx-4">
+                                <div class="col-12 border-bottom">
+                                    <div class="row">
+                                        <div class="col-6 mx-0 text-center more_info_plane">
+                                            <div class="p-3 paraph">
+                                                Detail Pemberangkatan
+                                            </div>
+                                        </div>
+                                        <div class="col-6 mx-0 text-center more_info_plane">
+                                            <div class="p-3 paraph">
+                                                Info Harga
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="row">
+                                <div class="col-3 col-sm-2">
+                                    <div class="p-3">
+                                        <img src="../img/masakapai/GARUDA_INDONESIA_AIR.png" width="100%" alt="">
+                                        <p class="font-weight-bold paraph">Garuda Indonesia</p>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="col-12 col-md-2 pt-4">
+                            <h6 class="text-center mb-3 mb-md-2">Rp 600.000/org</h6>
+                            <div class="text-center">
+                                <button class="btn btn-warning w-100">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-right mt-3 mb-4">
+                    <button class="btn bgg-greeny rounded-pill px-5 py-2 w-25 text-white shadow"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid footer py-5" id="contact_content">
+            <div class="container">
+                <div class="row text-white">
+                    <div class="col-md-4">
+                        <div class="d-flex mb-3">
+                            <img src="../img/favicon.png" class="d-inline" width="60px" height="60px" alt="">
+                            <div class="footer_app_name ml-2 mt-1">
+                                <h2 class="m-0 p-0">Do Lan</h2>
+                                <p class="slogan-nav m-0 p-0 slogan-footer">Happy Tourism</p>
+                            </div>
+                        </div>
+                        <p class="paraph text-justify">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga eaque totam in sit nobis, cumque officiis? Itaque quibusdam porro nulla, maxime debitis delectus quasi repellendus?
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row px-4 my-2">
+                            <div class="col-12"><p><i class="fab fa-whatsapp contact-icon mt-1 mx-4"></i>+6285 6450 27785</p></div>
+                            <div class="col-12"><p><i class="fab fa-instagram contact-icon mt-1 mx-4"></i>Oninno</p></div>
+                            <div class="col-12"><p><i class="fab fa-facebook contact-icon mt-1 mx-4"></i>Ninno</p></div>
+                            <div class="col-12"><p><i class="fas fa-envelope contact-icon mt-1 mx-4"></i>khusnul.ninno15@gmail.com</p></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <div class="col-12"><p><i class="fas fa-map-marker-alt contact-icon mt-1 mx-4"></i>Jawatimur, Pasuruan, Purwosari</p></div>
+                        
+                        <div class="text-center">
+                            <label for="email" class="mt-2">Masukkan Email untuk subscribe</label>                
+                        </div>
+                        <div class="form-group m-0 p-1 bg-real rounded-pill overflow-hidden border-0 w-100 shadow">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="form-group border-0 mb-0 py-0">
+                                        <input type="text" name="" id="email" class="form-control border-0 py-2 px-4 w-100" placeholder="Emailmu..." aria-describedby="helpId">    
+                                    </div>
+                                </div>
+                                <div class="col-4 py-0 my-0 text-right">
+                                    <button type="submit" class="btn btn-warning px-3 btn-sm mt-1 mr-1 rounded-pill shadow">
+                                        Subscribe
+                                    </button>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid developed py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-white">
+                        <img class="d-inline" src="../img/Kodebekah-Logo copy.png" width="50px" alt="">
+                        <p class="d-inline ml-3 position-relative" style="top: 2px;">Developed by <a href="#">Kodeberkah</a> <i class="fas fa-heart fa-lg fa-fw ml-3 text-danger"></i> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/fontawesome.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/script.js"></script>    
+
+</body>
+</html>

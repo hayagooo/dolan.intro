@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Lan - News</title>
+
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/slick-theme.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    
+    <header class="nav-fixed shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand mx-4 mt-1" href="#">
+                <div class="d-flex">
+                    <img src="../img/favicon.png" class="mr-1" width="40px" height="40px" alt="">
+                    <div class="greeny">
+                        <h4 class="my-0 py-0" id="app_name">Do Lan</h4>
+                        <p class="my-0 py-0 slogan-nav">Happy Tourism</p>
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-center">
+                    <li class="nav-item nav-menu">
+                        <a class="nav-link" href="../../index.html">HOME</a>
+                    </li>
+                    <li class="nav-item nav-menu">
+                        <a class="nav-link" href="../page/destinasi.html">DESTINATION</a>
+                    </li>
+                    <li class="nav-item nav-menu">
+                        <a class="nav-link" href="../page/hotel.html">HOTELS</a>
+                    </li>
+                    <li class="nav-item nav-menu">
+                        <a class="nav-link" href="../page/transport.html">TRANSPORT</a>
+                    </li>
+                    <li class="nav-item nav-menu active active-nav">
+                        <a class="nav-link" href="../page/news.html">NEWS</a>
+                    </li>
+                    <li class="nav-item nav-menu">
+                        <a class="nav-link" href="#contact_content">CONTACT</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <i class="fa fa-search" id="nav-search" aria-hidden="true"></i>
+                    </li>
+                    <!-- <li class="nav-item mt-2">
+                        <button class="btn shadow text-white btn-sm px-4 btn-greeny rounded-pill" onclick="window.location.href='assets/page/signin.html'">Sign in</button>
+                        <button class="btn border border-success text-dark btn-sm px-4 rounded-pill" id="btn-signup" onclick="window.location.href='assets/page/signup.html'">Sign up</button>
+                    </li> -->
+                    <li class="nav-item dropdown d-inline-block user_auth">
+                        <div class=""  href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <h6 class="d-inline position-relative mr-2 ml-3" style="top: -15px;">
+                                Khusnul
+                            </h6>
+                            <div class="position-relative d-inline-block mr-3 auth overflow-hidden rounded-circle">
+                                <img src="../img/pengembang.JPG" class="h-100 d-inline-block" alt="">
+                            </div>
+                        </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item py-2" href="#"><i class="fas fa-user mr-2"></i>Profilku</a>
+                            <a class="dropdown-item py-2 border-bottom" href="#"><i class="fas fa-cogs mr-2"></i>Settings</a>
+                            <a class="dropdown-item py-2 text-danger href="#"><i class="fas fa-sign-out-alt mr-2"></i>Logout</a>
+                        </div>
+                    </li>
+                  </ul>
+            </div>
+        </nav>
+        <div class="search_bar bg-success shadow-sm">
+            <div class="col-sm-6 offset-sm-3">
+                <div class="form-group m-0 p-1 bg-real rounded-pill overflow-hidden border-0 w-100 shadow position-relative" style="top: 10px"> 
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="form-group border-0 mb-0 py-0">
+                                <input type="text" name="" id="search" class="form-control border-0 py-2 px-4 w-100" placeholder="Cari sesuatu..." aria-describedby="helpId">    
+                            </div>
+                        </div>
+                        <div class="col-3 py-0 my-0 text-right">
+                            <button type="submit" class="btn btn-warning px-3 w-75 btn-sm mt-1 mr-1 rounded-pill shadow">
+                                <i class="fas fa-search"></i>  
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid bg-success">
+        <div class="row">
+            <div class="col-12 py-5 mt-5">
+                <h4 class="px-4 pt-3 text-white"><i class="fas fa-newspaper"></i> Berita utama</h4>
+                <div id="main_news_slider">
+                    <div>
+                        <div class="bg-dark w-100 rounded-lg overflow-hidden main_news_page">
+                            <img src="../img/wallpaper/hotel1.jpg" alt="">
+                            <div class="main_news_description px-2">
+                                <div class="row">
+                                    <div class="col-12 col-sm-9">
+                                        <h4>Lorem ipsum dolor sit amet.</h4>
+                                        <p class="mb-0 pb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, est id voluptatem explicabo modi quos laudantium molestiae quam. Culpa, perferendis?</p>
+                                    </div>
+                                    <div class="col-12 col-sm-3 px-3 py-5 btn-share_news">
+                                        <div class="btn-group position-absolute">
+                                            <button class="btn btn-warning shadow"><i class="fas fa-share mr-3"></i>Share</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div>
+                        <div class="bg-dark w-100 rounded-lg overflow-hidden position-relative main_news_page">
+                            <img src="../img/wallpaper/indo.jpg" alt="">
+                            <div class="main_news_description px-2">
+                                <div class="row">
+                                    <div class="col-12 col-sm-9">
+                                        <h4>Lorem ipsum dolor sit amet.</h4>
+                                        <p class="mb-0 pb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, est id voluptatem explicabo modi quos laudantium molestiae quam. Culpa, perferendis?</p>
+                                    </div>
+                                    <div class="col-12 col-sm-3 px-4 py-5 btn-share_news">
+                                        <div class="btn-group position-absolute">
+                                            <button class="btn btn-warning shadow"><i class="fas fa-share mr-3"></i>Share</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 offset-sm-1 col-12 position-relative" data-aos="fade-up" style="top: -35px;">
+                    <div class="form-group p-1 rounded-pill bg-real filter-top_destination border-0 shadow">
+                        <div class="row">
+                            <div class="col-md-5 my-2 border-right">
+                                <div class="d-flex px-3 searching_destination">
+                                    <i class="fas mt-2 mr-2 fa-search"></i>
+                                    <input type="text" class="form-control border-0 d-inline" placeholder="Cari Berita...">    
+                                </div>
+                            </div>
+                            <div class="col-md-5 my-2 border-right">
+                                <div class="d-flex px-2 searching_destination">
+                                    <select name="" id="" class="form-control border-0 d-inline">
+                                        <option value="">Pilih Lokasi</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-2 my-2 pr-4">
+                                <button class="btn btn-warning rounded w-100 rounded-pill shadow"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="container-fluid my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div  class="card overflow-hidden hotel_card border border-0 shadow-sm my-3">
+                                <div class="overflow-hidden position-relative img_card_hotel">
+                                    <img class="card-img-top" src="../img/wallpaper/hotel1.jpg" alt="">
+                                </div>
+                                <div class="card-body m-0 p-0">
+                                    <div class="p-3">                                
+                                        <h6 class="card-title mb-0 pb-1">Berita Lorem, ipsum dolor.</h6>
+                                        <p class="paraph" style="color: gray; font-size: .7rem;">
+                                            <span class="mr-3"><i class="fas fa-clock"></i> 20 Maret 2020</span>
+                                            <span class="mr-3"><i class="fas fa-map-marker-alt"></i> Pasuruan</span>
+                                        </p>
+                                        <p class="paraph card-text p-0 hotel_description m-0 mb-3" style="font-size: .75rem;">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla numquam corrupti maiores labore excepturi reprehenderit fugiat fuga quia non quibusdam.
+                                        </p>
+                                        <p class="mt-1 paraph">
+                                            <span class="mr-3"><i class="greeny fas fa-eye"></i> 10 </span>
+                                            <span class="mr-3"><i class="greeny fas fa-comment"></i> 8 </span>
+                                            <span class="mr-3"><i class="greeny fas fa-share"></i> 3 </span>
+                                        </p>
+                                    </div>
+                                    <div class="btn-group w-100 rounded-pill">
+                                        <button type="button" class="btn mb-0 rounded-pill bgg-greeny text-white"> <i class="mx-2 fas fa-book-reader    "></i> Selengkapnya</button>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div  class="card overflow-hidden hotel_card border border-0 shadow-sm my-3">
+                                <div class="overflow-hidden position-relative img_card_hotel">
+                                    <img class="card-img-top" src="../img/wallpaper/indo.jpg" alt="">
+                                </div>
+                                <div class="card-body m-0 p-0">
+                                    <div class="p-3">                                
+                                        <h6 class="card-title mb-0 pb-1">Berita Lorem, ipsum dolor.</h6>
+                                        <p class="paraph" style="color: gray; font-size: .7rem;">
+                                            <span class="mr-3"><i class="fas fa-clock"></i> 20 Maret 2020</span>
+                                            <span class="mr-3"><i class="fas fa-map-marker-alt"></i> Pasuruan</span>
+                                        </p>
+                                        <p class="paraph card-text p-0 hotel_description m-0 mb-3" style="font-size: .75rem;">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla numquam corrupti maiores labore excepturi reprehenderit fugiat fuga quia non quibusdam.
+                                        </p>
+                                        <p class="mt-1 paraph">
+                                            <span class="mr-3"><i class="greeny fas fa-eye"></i> 10 </span>
+                                            <span class="mr-3"><i class="greeny fas fa-comment"></i> 8 </span>
+                                            <span class="mr-3"><i class="greeny fas fa-share"></i> 3 </span>
+                                        </p>
+                                    </div>
+                                    <div class="btn-group w-100 rounded-pill">
+                                        <button type="button" class="btn mb-0 rounded-pill bgg-greeny text-white"> <i class="mx-2 fas fa-book-reader    "></i> Selengkapnya</button>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div  class="card overflow-hidden hotel_card border border-0 shadow-sm my-3">
+                                <div class="overflow-hidden position-relative img_card_hotel">
+                                    <img class="card-img-top" src="../img/wallpaper/borobudur.jpg" alt="">
+                                </div>
+                                <div class="card-body m-0 p-0">
+                                    <div class="p-3">                                
+                                        <h6 class="card-title mb-0 pb-1">Berita Lorem, ipsum dolor.</h6>
+                                        <p class="paraph" style="color: gray; font-size: .7rem;">
+                                            <span class="mr-3"><i class="fas fa-clock"></i> 20 Maret 2020</span>
+                                            <span class="mr-3"><i class="fas fa-map-marker-alt"></i> Pasuruan</span>
+                                        </p>
+                                        <p class="paraph card-text p-0 hotel_description m-0 mb-3" style="font-size: .75rem;">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla numquam corrupti maiores labore excepturi reprehenderit fugiat fuga quia non quibusdam.
+                                        </p>
+                                        <p class="mt-1 paraph">
+                                            <span class="mr-3"><i class="greeny fas fa-eye"></i> 10 </span>
+                                            <span class="mr-3"><i class="greeny fas fa-comment"></i> 8 </span>
+                                            <span class="mr-3"><i class="greeny fas fa-share"></i> 3 </span>
+                                        </p>
+                                    </div>
+                                    <div class="btn-group w-100 rounded-pill">
+                                        <button type="button" class="btn mb-0 rounded-pill bgg-greeny text-white"> <i class="mx-2 fas fa-book-reader    "></i> Selengkapnya</button>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div  class="card overflow-hidden hotel_card border border-0 shadow-sm my-3">
+                                <div class="overflow-hidden position-relative img_card_hotel">
+                                    <img class="card-img-top" src="../img/wallpaper/budha.jpg" alt="">
+                                </div>
+                                <div class="card-body m-0 p-0">
+                                    <div class="p-3">                                
+                                        <h6 class="card-title mb-0 pb-1">Berita Lorem, ipsum dolor.</h6>
+                                        <p class="paraph" style="color: gray; font-size: .7rem;">
+                                            <span class="mr-3"><i class="fas fa-clock"></i> 20 Maret 2020</span>
+                                            <span class="mr-3"><i class="fas fa-map-marker-alt"></i> Pasuruan</span>
+                                        </p>
+                                        <p class="paraph card-text p-0 hotel_description m-0 mb-3" style="font-size: .75rem;">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla numquam corrupti maiores labore excepturi reprehenderit fugiat fuga quia non quibusdam.
+                                        </p>
+                                        <p class="mt-1 paraph">
+                                            <span class="mr-3"><i class="greeny fas fa-eye"></i> 10 </span>
+                                            <span class="mr-3"><i class="greeny fas fa-comment"></i> 8 </span>
+                                            <span class="mr-3"><i class="greeny fas fa-share"></i> 3 </span>
+                                        </p>
+                                    </div>
+                                    <div class="btn-group w-100 rounded-pill">
+                                        <button type="button" class="btn mb-0 rounded-pill bgg-greeny text-white"> <i class="mx-2 fas fa-book-reader    "></i> Selengkapnya</button>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div  class="card overflow-hidden hotel_card border border-0 shadow-sm my-3">
+                                <div class="overflow-hidden position-relative img_card_hotel">
+                                    <img class="card-img-top" src="../img/wallpaper/hindu.jpg" alt="">
+                                </div>
+                                <div class="card-body m-0 p-0">
+                                    <div class="p-3">                                
+                                        <h6 class="card-title mb-0 pb-1">Berita Lorem, ipsum dolor.</h6>
+                                        <p class="paraph" style="color: gray; font-size: .7rem;">
+                                            <span class="mr-3"><i class="fas fa-clock"></i> 20 Maret 2020</span>
+                                            <span class="mr-3"><i class="fas fa-map-marker-alt"></i> Pasuruan</span>
+                                        </p>
+                                        <p class="paraph card-text p-0 hotel_description m-0 mb-3" style="font-size: .75rem;">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla numquam corrupti maiores labore excepturi reprehenderit fugiat fuga quia non quibusdam.
+                                        </p>
+                                        <p class="mt-1 paraph">
+                                            <span class="mr-3"><i class="greeny fas fa-eye"></i> 10 </span>
+                                            <span class="mr-3"><i class="greeny fas fa-comment"></i> 8 </span>
+                                            <span class="mr-3"><i class="greeny fas fa-share"></i> 3 </span>
+                                        </p>
+                                    </div>
+                                    <div class="btn-group w-100 rounded-pill">
+                                        <button type="button" class="btn mb-0 rounded-pill bgg-greeny text-white"> <i class="mx-2 fas fa-book-reader    "></i> Selengkapnya</button>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div  class="card overflow-hidden hotel_card border border-0 shadow-sm my-3">
+                                <div class="overflow-hidden position-relative img_card_hotel">
+                                    <img class="card-img-top" src="../img/wallpaper/bali.jpg" alt="">
+                                </div>
+                                <div class="card-body m-0 p-0">
+                                    <div class="p-3">                                
+                                        <h6 class="card-title mb-0 pb-1">Berita Lorem, ipsum dolor.</h6>
+                                        <p class="paraph" style="color: gray; font-size: .7rem;">
+                                            <span class="mr-3"><i class="fas fa-clock"></i> 20 Maret 2020</span>
+                                            <span class="mr-3"><i class="fas fa-map-marker-alt"></i> Pasuruan</span>
+                                        </p>
+                                        <p class="paraph card-text p-0 hotel_description m-0 mb-3" style="font-size: .75rem;">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla numquam corrupti maiores labore excepturi reprehenderit fugiat fuga quia non quibusdam.
+                                        </p>
+                                        <p class="mt-1 paraph">
+                                            <span class="mr-3"><i class="greeny fas fa-eye"></i> 10 </span>
+                                            <span class="mr-3"><i class="greeny fas fa-comment"></i> 8 </span>
+                                            <span class="mr-3"><i class="greeny fas fa-share"></i> 3 </span>
+                                        </p>
+                                    </div>
+                                    <div class="btn-group w-100 rounded-pill">
+                                        <button type="button" class="btn mb-0 rounded-pill bgg-greeny text-white"> <i class="mx-2 fas fa-book-reader    "></i> Selengkapnya</button>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 my-3">
+                    <div class="sticky-filter">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-6 col-sm-6 col-6">
+                                <div class="card mb-3 rounded overflow-hidden">
+                                    <div class="overflow-hidden position-relative img_card_news_small">
+                                        <img class="card-img" src="../img/wallpaper/bali.jpg" alt="">
+                                    </div>
+                                    <div class="card-body p-2 m-0">
+                                        <p class="card-title paraph p-0 m-0">Berita lain</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-6 col-sm-6 col-6">
+                                <div class="card mb-3 rounded overflow-hidden">
+                                    <div class="overflow-hidden position-relative img_card_news_small">
+                                        <img class="card-img" src="../img/wallpaper/indo.jpg" alt="">
+                                    </div>
+                                    <div class="card-body p-2 m-0">
+                                        <p class="card-title paraph p-0 m-0">Berita lain</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-6 col-sm-6 col-6">
+                                <div class="card mb-3 rounded overflow-hidden">
+                                    <div class="overflow-hidden position-relative img_card_news_small">
+                                        <img class="card-img" src="../img/wallpaper/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="card-body p-2 m-0">
+                                        <p class="card-title paraph p-0 m-0">Berita lain</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-6 col-sm-6 col-6">
+                                <div class="card mb-3 rounded overflow-hidden">
+                                    <div class="overflow-hidden position-relative img_card_news_small">
+                                        <img class="card-img" src="../img/wallpaper/bali.jpg" alt="">
+                                    </div>
+                                    <div class="card-body p-2 m-0">
+                                        <p class="card-title paraph p-0 m-0">Berita lain</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 text-right mt-sm-5 mt-3">
+                    <button class="bgg-greeny btn px-5 rounded-pill text-white"><i class="fas fa-eye"></i> Lihat berita lain</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <footer>
+        <div class="container-fluid footer py-5" id="contact_content">
+            <div class="container">
+                <div class="row text-white">
+                    <div class="col-md-4">
+                        <div class="d-flex mb-3">
+                            <img src="../img/favicon.png" class="d-inline" width="60px" height="60px" alt="">
+                            <div class="footer_app_name ml-2 mt-1">
+                                <h2 class="m-0 p-0">Do Lan</h2>
+                                <p class="slogan-nav m-0 p-0 slogan-footer">Happy Tourism</p>
+                            </div>
+                        </div>
+                        <p class="paraph text-justify">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga eaque totam in sit nobis, cumque officiis? Itaque quibusdam porro nulla, maxime debitis delectus quasi repellendus?
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row px-4 my-2">
+                            <div class="col-12"><p><i class="fab fa-whatsapp contact-icon mt-1 mx-4"></i>+6285 6450 27785</p></div>
+                            <div class="col-12"><p><i class="fab fa-instagram contact-icon mt-1 mx-4"></i>Oninno</p></div>
+                            <div class="col-12"><p><i class="fab fa-facebook contact-icon mt-1 mx-4"></i>Ninno</p></div>
+                            <div class="col-12"><p><i class="fas fa-envelope contact-icon mt-1 mx-4"></i>khusnul.ninno15@gmail.com</p></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <div class="col-12"><p><i class="fas fa-map-marker-alt contact-icon mt-1 mx-4"></i>Jawatimur, Pasuruan, Purwosari</p></div>
+                        
+                        <div class="text-center">
+                            <label for="email" class="mt-2">Masukkan Email untuk subscribe</label>                
+                        </div>
+                        <div class="form-group m-0 p-1 bg-real rounded-pill overflow-hidden border-0 w-100 shadow">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="form-group border-0 mb-0 py-0">
+                                        <input type="text" name="" id="email" class="form-control border-0 py-2 px-4 w-100" placeholder="Emailmu..." aria-describedby="helpId">    
+                                    </div>
+                                </div>
+                                <div class="col-4 py-0 my-0 text-right">
+                                    <button type="submit" class="btn btn-warning px-3 btn-sm mt-1 mr-1 rounded-pill shadow">
+                                        Subscribe
+                                    </button>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid developed py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-white">
+                        <img class="d-inline" src="../img/Kodebekah-Logo copy.png" width="50px" alt="">
+                        <p class="d-inline ml-3 position-relative" style="top: 2px;">Developed by <a href="#">Kodeberkah</a> <i class="fas fa-heart fa-lg fa-fw ml-3 text-danger"></i> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/fontawesome.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

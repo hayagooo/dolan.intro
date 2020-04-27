@@ -1,0 +1,805 @@
+html {
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right, rgb(16, 182, 16), rgb(1, 149, 1));
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(to right, rgb(10, 150, 10), rgb(0, 98, 0));
+  }
+
+.slogan-nav {
+    font-size: .75rem;
+    position: relative;
+    bottom: 5px;
+    letter-spacing: .3px;
+}
+.nav-fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+#app_name {
+    letter-spacing: 1.5px;
+}
+.search_bar {
+    width: 100%;
+    height: 40px;
+}
+.bg-real {
+    background-color: white !important;
+}
+.paraph {
+    font-size: .85rem;
+}
+.bg-greeny {
+    background-color: rgb(16, 182, 16);
+}
+.bgg-greeny {
+    background-image: linear-gradient(to right, rgb(16, 182, 16), rgb(1, 149, 1));
+    transition: all ease .3s;
+}
+.bgg-greeny:hover {
+    background-image: linear-gradient(to right, rgb(9, 148, 9), rgb(1, 109, 1));
+}
+@media only screen and (max-width: 600px) {
+    .bgg-greeny {
+        padding-bottom: 15px;
+    }
+}
+.greeny {
+    color: rgb(16, 182, 16);
+}
+
+.nav-menu::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 0%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    height: 3px;
+    background-color: rgb(16, 182, 16);
+    transition: all .3s;
+}
+.nav-menu:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    height: 3px;
+    background-color: rgb(16, 182, 16);
+}
+
+#nav-search {
+    cursor: pointer;
+}
+
+.btn-greeny {
+    background-image: linear-gradient(to right, rgb(16, 182, 16), rgb(1, 149, 1));
+    position: relative;
+    top: -3px;
+}
+
+#btn-signup {
+    position: relative;
+    top: -3px;
+}
+
+.nav-item {
+    position: relative;
+    margin: 0px 10px;
+    color: gray;
+}
+
+.active-nav .nav-link {
+    font-weight: bold;
+    color: rgb(16, 182, 16) !important;
+}
+
+.navbar-nav {
+    font-size: .85rem;
+}
+
+.active-nav::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    height: 5px;
+    background-color: rgb(16, 182, 16);
+}
+
+
+
+
+#jumbotron {
+    background-image: url('../img/wallpaper/bali.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+#jumbotron-description {
+    position: relative;
+    z-index: 10;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background-image: linear-gradient(to right, rgba(16, 182, 16, 0.4), rgba(0, 75, 0, 0.4)); */
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    right: 0;
+    height: 100%;
+    top: 0;
+}
+
+
+
+
+
+.fitur {
+    border-radius: 30px !important;
+    transition: all .4s;
+}
+.fitur:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+.fitur svg {
+    font-size: 3rem !important;
+}
+
+
+#search_destination {
+    position: absolute;
+    left: 0;
+    padding: 10px 10px !important;
+}
+#phone_destination {
+    position: relative;
+    height: 500px;
+    border-radius: 20px;
+}
+#screen_destination {
+    position: relative;
+    height: 100%;
+    border-radius: 10px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#camera_destination {
+    position: absolute;
+    width: 40%;
+    left: 30%;
+    top: 0px;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.03) !important;
+}
+#this_camera {
+    position: absolute;
+    width: 40%;
+    left: 30%;
+    height: 6px;
+    background-color: gainsboro;
+}
+#this_flash {
+    width: 6px;
+    height: 6px;
+    background-color: gainsboro;
+    position: absolute;
+    left: 75%;
+}
+.height_destinasi_other {
+    height: 75px;
+}
+.name_destinasi_other {
+    font-size: .9rem;
+}
+.other_destination {
+    transition: all ease-in-out .3s;
+}
+.other_destination:hover {
+    background-color: white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+.main_destination {
+    transition: all .3s;
+    overflow: hidden;
+}   
+.main_destination:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+.main_destination:hover .main_menu {
+    width: 30%;
+    height: 50%;
+    top: 25%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    bottom: 0;
+    right: 0;
+}
+.main_menu {
+    transition: all .3s;
+    width: 30%;
+    height: 50%;
+    top: 25%;
+    font-size: 1.2rem;
+    color: white;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    bottom: 0;
+    right: -50%;
+}
+@media only screen and (max-width: 575px) {
+    .main_menu svg {
+        display: block;
+        text-align: center;
+        margin: 25px;
+    }
+    .main_menu {
+        display: inline-block;
+        margin-left: 40px;
+    }
+    .main-menu {
+        transition: all .3s;
+        width: 50%;
+        height: 50%;
+        top: 25%;
+        padding: 20px;
+        font-size: 1.2rem;
+        color: white;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        bottom: 0;
+        right: -50%;
+    }
+    .image_main_destination {
+        margin-bottom: 20px;
+    }
+}
+.hotel_card {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: all .3s;
+}
+.hotel_card:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+.slick-slide {
+    margin: 30px 20px;
+}
+.img_card_hotel {
+    height: 150px;
+    background-color: black;
+}
+.img_card_hotel img {
+    transition: all .3s;
+}
+.img_card_hotel:hover img {
+    opacity: .5;
+    transform: scale(1.1);
+}
+.hotel_description {
+    font-size: .8rem;
+}
+
+
+.bg-news {
+    background-image: url('../img/wallpaper/hotel1.jpg');
+    opacity: 0.3;
+    position: absolute;
+    width: 100%;
+    background-attachment: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+}
+.main_news {
+    height: 285px;
+    position: relative;
+    transition: all .3s;
+}
+.main_news_page {
+    height: 400px;
+    position: relative;
+    transition: all .3s;
+}
+.main_news img, .main_news_page img {
+    transition: all .3s;
+}
+.main_news_page img {
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    bottom: 0 !important;
+    width: 100%;
+}
+@media only screen and (max-width: 700px) {
+    .main_news_page img {
+        opacity: 0.7;
+        position: absolute;
+        top: 0;
+        bottom: 0 !important;
+        width: auto;
+    }   
+}
+.main_news_description {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 10;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+}
+.main_news:hover img, .main_news_page:hover img {
+    transform: scale(1.05);
+    opacity: 0.5;
+    cursor: pointer;
+}
+.other_news {
+    transition: all .3s;
+}
+.other_news:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+.other_news_image {
+    height: 70px;
+}
+.other_news_scrollable {
+    height: 320px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#thanksto {
+    background-image: url('../img/wallpaper/indo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.footer {
+    background-color: rgb(3, 58, 58);
+}
+.slogan-footer {
+    letter-spacing: 1.8px;
+}
+
+.contact-icon, .contact-fill {
+    font-size: 1.1rem;
+}
+
+.developed {
+    background-color: rgb(0, 32, 32);
+}
+
+
+
+.destinasi_parallax {
+    background-image: url('../img/wallpaper/borobudur.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.searching_destination svg {
+    font-size: 1.5rem;
+    color: gray;
+}
+@media only screen and (max-width: 800px) {
+    .filter-top_destination {
+        border-radius: 10px !important;
+    }
+}
+.categori_destinasi_large {
+    display: inline-block !important;
+}
+.categori_destinasi_medium {
+    display: none !important;
+}
+@media only screen and (max-width: 995px) {
+    .categori_destinasi_large {
+        display: none !important;
+    }
+    .categori_destinasi_medium {
+        display: inline-block !important;
+    }   
+}
+.sticky-filter {
+    position: sticky;
+    top: 100px;
+}
+.destinasi {
+    overflow: hidden;
+    transition: all .3s;
+}
+.destinasi:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+.destinasi_image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden !important;
+    margin: 0 !important;
+    border-radius: 3px;
+}
+.stars_destinasi , .location_destinasi, .pricing_destinasi {
+    font-size: .7rem;
+}
+.location_destinasi svg, .pricing_destinasi svg{
+    font-size: .8rem !important;
+    color: rgb(16, 182, 16);
+}
+
+
+.hotel_parallax {
+    background-image: url('../img/wallpaper/hotel.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner_hotel {
+    height: 250px;
+    position: relative;
+}
+.banner_hotel img {
+    opacity: 0.7;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.card-img-top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.btn-aksi_hotel_pesan {
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+.btn-aksi_hotel_lihat {
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+}
+.btn-share_news {
+    text-align: right;
+    position: relative;
+    padding-right: 20px;
+}
+.btn-share_news .btn-group {
+    right: 35px;
+}
+.img_card_news_small {
+    height: 100px;
+    background-color: black;
+    position: relative;
+}
+.img_card_news_small img {
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+}
+
+.login_illustration {
+    position: relative;
+    left: 20%;
+}
+.border-r-0 {
+    border-right: none !important;
+}
+.border-l-0 {
+    border-left: none !important;
+}
+.text-gray {
+    color: gray;
+}
+.login_illustration_content {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 700px) {
+    .login_illustration_content {
+        display: none;
+    }
+    .login_card {
+        width: 100% !important;
+    }
+}
+
+.auth {
+    width: 40px !important;
+    height: 40px !important;
+}
+.user_auth {
+    cursor: pointer !important;
+}
+.img_illust {
+    transition: all .3s;
+    display: inline-block;
+}
+.decoration_parallax {
+    width: 100%;
+    left: 0px;
+    top: -50px;
+    z-index: 10;
+    opacity: .7;
+}
+.decoration_footer {
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    z-index: 10;
+    opacity: 1;
+}
+.decoration_hotel {
+    height: 90%;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+@media only screen and (max-width: 850px) {
+    .img_illust {
+        transition: all .3s;
+        display: none !important;
+    }   
+    .decoration_parallax {
+        height: 100%;
+        width: auto;
+        left: 0px;
+        z-index: 10;
+        opacity: .7;
+    }    
+    .decoration_hotel {
+        height: 90%;
+        right: 0;
+        top: 0;
+        width: auto;
+        opacity: 0.3;
+    }
+}
+#transport_desktop {
+    display: inline-block;
+}
+#transport_mobile {
+    display: none;
+}
+@media only screen and (max-width: 800px) {
+    #transport_desktop {
+        display: none;
+    }
+    #transport_mobile {
+        display: inline-block;
+    }
+}
+.card_transport_mobile {
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+}
+.card_transport_mobile::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    transition: all .3s;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(1, 109, 1, .7);
+}
+.card_transport_mobile:hover::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(1, 109, 1, .7);
+}
+.card_transport_mobile::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    transition: all .3s;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: rgba(1, 109, 1, .7);
+}
+.card_transport_mobile:hover::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    right: 0;
+    top: 0;
+    background-color: rgba(1, 109, 1, .7);
+}
+.card_transport_mobile:hover .card_transport_mobile_text {
+    color: white;
+}
+.card_transport_mobile_text {
+    position: relative;
+    z-index: 10;
+    transition: all .3s;
+}
+.transport_desktop_img {
+    top: 0;
+    left: 0;
+    bottom: 0 !important;
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+}
+.desktop_transport::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 32, 32, 0.5);
+    width: 100%;
+    height: 0;
+    transition: all ease .5s;
+}
+.desktop_transport:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 32, 32, 0.5);
+    width: 100%;
+    height: 100%;
+}
+.desktop_transport::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 32, 32, 0.5);
+    width: 100%;
+    height: 0;
+    transition: all ease .5s;
+}
+.desktop_transport:hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 32, 32, 0.5);
+    width: 100%;
+    height: 100%;
+}
+.to_sticker {
+    width: 40px;
+    height: 40px;
+    right: -35px;
+    padding-top: 8px;
+    top: 30px;
+    z-index: 10;
+}
+#my_arrow_h {
+    display: inline-block;
+}
+#my_arrow_v {
+    display: none;
+}
+.img_maskapai {
+    width: 80%;
+    transition: all .3s;
+}
+@media (max-width: 980px) {
+    .img_maskapai {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+.plane_way_icon:nth-child(1) {
+    font-size: .3rem;
+    position: relative;
+    top: -2px;
+}
+.plane_way_icon:nth-child(2) {
+    font-size: .5rem;
+    position: relative;
+    top: -1px;
+}
+.plane_way_icon:nth-child(3) {
+    font-size: .7rem;
+}
+.plane_way_icon_set {
+    z-index: 12; 
+    top: 25px; 
+    right: -30px; 
+    transition: all .3s;
+    color: gainsboro;
+}
+.more_info_plane {
+    border: 0;
+    transition: all .3s;
+}
+.more_info_plane::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: rgb(1, 149, 1);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transition: all .3s;
+}
+.more_info_plane:hover::after {
+    width: 100%;
+}
+@media only screen and (max-width: 767px) {
+    .to_sticker {
+        right: 47%;
+        padding-top: 8px;
+        top: 77px;
+        z-index: 10;
+    }
+    .plane_way_icon_set {
+        z-index: 12; 
+        top: 25px; 
+        right: -25px; 
+        color: gainsboro;
+        transform: scale(.7);
+    }
+    #my_arrow_h {
+        display: none;
+    }
+    #my_arrow_v {
+        display: inline-block;
+    }
+    .img_maskapai {
+        width: 15%;
+        margin-top: 0px;
+    }
+    .list_maskapai {
+        width: 100%;
+        max-width: none;
+    }
+}
+.bg-detail {
+    overflow: hidden !important;
+    height: 490px;
+    position: relative;
+}
+.bg-detail {
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#nprogress .bar {
+    background: rgb(78, 253, 78) !important;
+}

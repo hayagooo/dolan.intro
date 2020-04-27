@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Lan - Happy tourism</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    
+    <header class="nav-fixed shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand mx-4 mt-1" href="#">
+                <div class="d-flex">
+                    <img src="assets/img/favicon.png" class="mr-1" width="40px" height="40px" alt="">
+                    <div class="greeny">
+                        <h4 class="my-0 py-0" id="app_name">Do Lan</h4>
+                        <p class="my-0 py-0 slogan-nav">Happy Tourism</p>
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-center">
+                    <li class="nav-item nav-menu active active-nav">
+                        <a class="nav-link" href="#jumbotron">HOME</a>
+                    </li>
+                    <li class="nav-item nav-menu">
+                        <a class="nav-link" href="assets/page/destinasi.html">DESTINATION</a>
+                    </li>
+                    <li class="nav-item nav-menu">
+                        <a class="nav-link" href="assets/page/hotel.html">HOTELS</a>
+                    </li>
+                    <li class="nav-item nav-menu">
+                        <a class="nav-link" href="assets/page/transport.html">TRANSPORT</a>
+                    </li>
+                    <li class="nav-item nav-menu">
+                        <a class="nav-link" href="assets/page/news.html">NEWS</a>
+                    </li>
+                    <li class="nav-item nav-menu">
+                        <a class="nav-link" href="#contact_content">CONTACT</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <i class="fa fa-search" id="nav-search" aria-hidden="true"></i>
+                    </li>
+                    <!-- <li class="nav-item mt-2">
+                        <button class="btn shadow text-white btn-sm px-4 btn-greeny rounded-pill" onclick="window.location.href='assets/page/signin.html'">Sign in</button>
+                        <button class="btn border border-success text-dark btn-sm px-4 rounded-pill" id="btn-signup" onclick="window.location.href='assets/page/signup.html'">Sign up</button>
+                    </li> -->
+                    <li class="nav-item dropdown d-inline-block user_auth">
+                        <div class=""  href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <h6 class="d-inline position-relative mr-2 ml-3" style="top: -15px;">
+                                Khusnul
+                            </h6>
+                            <div class="position-relative d-inline-block mr-3 auth overflow-hidden rounded-circle">
+                                <img src="assets/img/pengembang.JPG" class="h-100 d-inline-block" alt="">
+                            </div>
+                        </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item py-2" href="#"><i class="fas fa-user mr-2"></i>Profilku</a>
+                            <a class="dropdown-item py-2 border-bottom" href="#"><i class="fas fa-cogs mr-2"></i>Settings</a>
+                            <a class="dropdown-item py-2 text-danger href="#"><i class="fas fa-sign-out-alt mr-2"></i>Logout</a>
+                        </div>
+                    </li>
+                  </ul>
+            </div>
+        </nav>
+        <div class="search_bar bg-success shadow-sm">
+            <div class="col-sm-6 offset-sm-3">
+                <div class="form-group m-0 p-1 bg-real rounded-pill overflow-hidden border-0 w-100 shadow position-relative" style="top: 10px"> 
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="form-group border-0 mb-0 py-0">
+                                <input type="text" name="" id="search" class="form-control border-0 py-2 px-4 w-100" placeholder="Cari sesuatuassets." aria-describedby="helpId">    
+                            </div>
+                        </div>
+                        <div class="col-3 py-0 my-0 text-right">
+                            <button type="submit" class="btn btn-warning px-3 w-75 btn-sm mt-1 mr-1 rounded-pill shadow">
+                                <i class="fas fa-search"></i>  
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid position-relative overflow-hidden" id="jumbotron">
+        <img src="assets/img/decoration/cloud_parallax.png" class="position-absolute decoration_parallax" alt="">
+        <div class="container pt-5 position-relative" id="jumbotron-description">
+            <div class="row text-white pt-5">
+                <div class="col-md-6 my-5 py-5" data-aos="fade-up">
+                    <h1 class="my-3">Solusi terbaik untuk berwisata</h1>
+                    <p class="my-3">Cari destinasi pariwisata yang sesuai dengan selera anda, dengan kami semua urusan pariwisata
+                        bisa diatur tanpa ada kendala apapun. Booking hotel dulu agar wisata lebih nyaman. Tunggu apalagi ?</p>
+                    <div class="py-4">
+                        <button class="btn shadow text-white px-5 btn-greeny rounded-pill">Pelajari lebih</button>
+                        <button class="btn border text-white border-light px-5 rounded-pill" id="btn-signup">Temukan Destinasi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+
+    <div class="container-fluid position-relative">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-12 my-3">
+                    <h4 data-aos="fade-right">Kenapa memilih kami ?</h4>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-3 col-6">
+                            <div data-aos="fade-up" class="fitur text-center shadow-sm py-3 bg-real rounded-lg">
+                                <i class="fas fa-check greeny mb-3"></i>
+                                <h6>Mudah</h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-6">
+                            <div data-aos="fade-up" data-aos-delay="50" class="fitur text-center shadow-sm py-3 bg-real rounded-lg">
+                                <i class="fas fa-money-bill greeny mb-3"></i>
+                                <h6>Murah</h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-6">
+                            <div data-aos="fade-up" data-aos-delay="100" class="fitur text-center shadow-sm py-3 bg-real rounded-lg">
+                                <i class="fas fa-user-check greeny mb-3"></i>
+                                <h6>Terpercaya</h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-6">
+                            <div data-aos="fade-up" data-aos-delay="150" class="fitur text-center shadow-sm py-3 bg-real rounded-lg">
+                                <i class="fas fa-smile greeny mb-3"></i>
+                                <h6>Be happy</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-3 col-6">
+                            <div data-aos="fade-up" data-aos-delay="200" class="fitur text-center shadow-sm py-3 bg-real rounded-lg">
+                                <i class="fas fa-adjust greeny mb-3"></i>
+                                <h6>Terjangkau</h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-6">
+                            <div data-aos="fade-up" data-aos-delay="250" class="fitur text-center shadow-sm py-3 bg-real rounded-lg">
+                                <i class="fas fa-lock greeny mb-3"></i>
+                                <h6>Aman</h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-6">
+                            <div data-aos="fade-up" data-aos-delay="300" class="fitur text-center shadow-sm py-3 bg-real rounded-lg">
+                                <i class="fas fa-hand-holding-usd greeny mb-3"></i>
+                                <h6>Untung</h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-6">
+                            <div data-aos="fade-up" data-aos-delay="350" class="fitur text-center shadow-sm py-3 bg-real rounded-lg">
+                                <i class="fas fa-handshake greeny mb-3"></i>
+                                <h6>Friendly</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 my-3 text-center">
+                    <h4 class="my-4" data-aos="fade-left">Jelajahi berbagai destinasi</h4>
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2 px-4 bgg-greeny" data-aos="fade-right" style="border-radius: 40px;">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group mt-3">
+                                        <select name="kategori" id="kategori" class="form-control rounded-pill border-0">
+                                            <option value="">Pilih Kategori</option> 
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="form-control overflow-hidden pt-0 position-relative rounded-pill border-0 mt-3">
+                                        <div class="row pt-0 mt-0">
+                                            <div class="col-8 py-0 my-0">
+                                                <input type="text" name="" id="search_destination" class="form-control mx-1 mb-2 rounded-pill border-0" placeholder="Cari destinasi.." aria-describedby="helpId">
+                                            </div>
+                                            <div class="col-4 py-0 my-0 text-right">
+                                                <button type="submit" class="btn btn-warning w-75 btn-sm mt-1 mr-1 rounded-pill shadow"><i class="fas fa-search    "></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-lg-8 pt-3">
+                    <div data-aos="fade-right" class="rounded-sm shadow-sm overflow-hidden destinasi my-4">
+                        <div class="row">
+                            <div class="col-sm-3 col-5">
+                                <div class="destinasi_image">
+                                    <img class="rounded" src="assets/img/wallpaper/borobudur.jpg" height="100%" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-7 text-left">
+                                <h4 class="mt-2 mb-0 pb-0">Borobudur temple</h4>
+                                
+                                    <div class="stars_destinasi d-inline border-right pr-2">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star"></i>    
+                                    </div>
+                                    <div class="location_destinasi d-inline ml-2 pr-2 border-right">
+                                        <p class="d-inline">
+                                            <i class="fas fa-map-marker-alt"></i> Jawatimur, Pasuruan
+                                        </p>
+                                    </div>
+                                    <div class="pricing_destinasi d-inline ml-3">
+                                        <p class="d-inline">
+                                            <i class="fas fa-ticket-alt"></i> $20.00
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <p class="paraph mt-2">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, sunt. lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, minima.</p>
+                                    </p>
+                            </div>
+                            <div class="col-sm-3 col-12">
+                                <div class="btn-group w-100 mt-3 pt-4">
+                                    <button class="btn btn-light border border-success py-2 w-100 h-100">Lihat</button>
+                                    <button class="btn bgg-greeny py-2 w-100 text-white h-100">Pesan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div data-aos="fade-right" class="rounded-sm shadow-sm overflow-hidden destinasi my-4">
+                        <div class="row">
+                            <div class="col-sm-3 col-5">
+                                <div class="destinasi_image">
+                                    <img class="rounded" src="assets/img/wallpaper/indo.jpg" height="100%" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-7 text-left">
+                                <h4 class="mt-2 mb-0 pb-0">Lombok island</h4>
+                                
+                                    <div class="stars_destinasi d-inline border-right pr-2">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star"></i>    
+                                    </div>
+                                    <div class="location_destinasi d-inline ml-2 pr-2 border-right">
+                                        <p class="d-inline">
+                                            <i class="fas fa-map-marker-alt"></i> Jawatimur, Pasuruan
+                                        </p>
+                                    </div>
+                                    <div class="pricing_destinasi d-inline ml-3">
+                                        <p class="d-inline">
+                                            <i class="fas fa-ticket-alt"></i> $20.00
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <p class="paraph mt-2">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, sunt. lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, minima.</p>
+                                    </p>
+                            </div>
+                            <div class="col-sm-3 col-12">
+                                <div class="btn-group w-100 mt-3 pt-4">
+                                    <button class="btn btn-light border border-success py-2 w-100 h-100">Lihat</button>
+                                    <button class="btn bgg-greeny py-2 w-100 text-white h-100">Pesan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div data-aos="fade-right" class="rounded-sm shadow-sm overflow-hidden destinasi my-4">
+                        <div class="row">
+                            <div class="col-sm-3 col-5">
+                                <div class="destinasi_image">
+                                    <img class="rounded" src="assets/img/wallpaper/bali.jpg" height="100%" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-7 text-left">
+                                <h4 class="mt-2 mb-0 pb-0">Bali island</h4>
+                                
+                                    <div class="stars_destinasi d-inline border-right pr-2">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star"></i>    
+                                    </div>
+                                    <div class="location_destinasi d-inline ml-2 pr-2 border-right">
+                                        <p class="d-inline">
+                                            <i class="fas fa-map-marker-alt"></i> Jawatimur, Pasuruan
+                                        </p>
+                                    </div>
+                                    <div class="pricing_destinasi d-inline ml-3">
+                                        <p class="d-inline">
+                                            <i class="fas fa-ticket-alt"></i> $20.00
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <p class="paraph mt-2">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, sunt. lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, minima.</p>
+                                    </p>
+                            </div>
+                            <div class="col-sm-3 col-12">
+                                <div class="btn-group w-100 mt-3 pt-4">
+                                    <button class="btn btn-light border border-success py-2 w-100 h-100">Lihat</button>
+                                    <button class="btn bgg-greeny py-2 w-100 text-white h-100">Pesan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                        
+                </div>
+                <div class="col-lg-4 px-2 py-3">
+                    <div id="phone_destination" data-aos="fade-left" class="shadow p-3 text-center">
+                        <div id="camera_destination" class="rounded-pill py-3">
+                            <div id="this_camera" class="rounded-pill"></div>
+                            <div id="this_flash" class="rounded-pill"></div>
+                        </div>
+                        <div id="screen_destination" class="bg-light">
+                            <div class="container my-3 px-2">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row other_destination pt-2 rounded mx-1">
+                                            <div class="col-4 pr-0 mr-0">
+                                                <div class="height_destinasi_other rounded bg-dark overflow-hidden">
+                                                    <img src="assets/img/wallpaper/indo.jpg" height="100%" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-8 text-left my-1 height_destinasi_other">
+                                                <span class="align-middle name_destinasi_other p-0 m-0">Lorem amet consectetur adipisicing elit.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row other_destination pt-2 rounded mx-1">
+                                            <div class="col-4 pr-0 mr-0">
+                                                <div class="height_destinasi_other rounded bg-dark overflow-hidden">
+                                                    <img src="assets/img/wallpaper/indo.jpg" height="100%" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-8 text-left my-1 height_destinasi_other">
+                                                <span class="align-middle name_destinasi_other p-0 m-0">Lorem amet consectetur adipisicing elit.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row other_destination pt-2 rounded mx-1">
+                                            <div class="col-4 pr-0 mr-0">
+                                                <div class="height_destinasi_other rounded bg-dark overflow-hidden">
+                                                    <img src="assets/img/wallpaper/indo.jpg" height="100%" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-8 text-left my-1 height_destinasi_other">
+                                                <span class="align-middle name_destinasi_other p-0 m-0">Lorem amet consectetur adipisicing elit.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row other_destination pt-2 rounded mx-1">
+                                            <div class="col-4 pr-0 mr-0">
+                                                <div class="height_destinasi_other rounded bg-dark overflow-hidden">
+                                                    <img src="assets/img/wallpaper/indo.jpg" height="100%" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-8 text-left my-1 height_destinasi_other">
+                                                <span class="align-middle name_destinasi_other p-0 m-0">Lorem amet consectetur adipisicing elit.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row other_destination pt-2 rounded mx-1">
+                                            <div class="col-4 pr-0 mr-0">
+                                                <div class="height_destinasi_other rounded bg-dark overflow-hidden">
+                                                    <img src="assets/img/wallpaper/indo.jpg" height="100%" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-8 text-left my-1 height_destinasi_other">
+                                                <span class="align-middle name_destinasi_other p-0 m-0">Lorem amet consectetur adipisicing elit.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid position-relative">
+        <img src="assets/img/decoration/cloud_hotel.png" class="position-absolute decoration_hotel" alt="">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-5 mb-4 mt-5 pt-4" data-aos="fade-right">
+                   <h4 class="mb-3">Cari hotel</h4>
+                   <p>Cari hotel sebelum anda berwisata, agar berwisata lebih merasa nyaman dan senang.</p>
+                    <div class="form-group m-0 bg-real p-2 rounded-pill overflow-hidden border-0 w-100 shadow">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="form-group border-0 mb-0 py-0">
+                                    <input type="text" name="" id="" class="form-control border-0 py-2 px-4 w-100" placeholder="Cari hotelassets." aria-describedby="helpId">    
+                                </div>
+                            </div>
+                            <div class="col-4 py-0 my-0 text-right">
+                                <button type="submit" class="btn btn-warning w-75 btn-sm mt-1 mr-1 rounded-pill shadow"><i class="fas fa-search    "></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <button class="btn bgg-greeny px-5 position-relative my-3 rounded-pill text-white py-2" style="z-index: 5;"> <i class="fas fa-hotel"></i> Lihat semua hotel</button>
+                    </div>    
+                </div>
+                <div class="col-lg-7 mb-5">
+                    <div id="hotel_slider" data-aos="fade-left">
+                        <div class="card hotel_card border border-0 shadow-sm">
+                            <div class="overflow-hidden img_card_hotel position-relative">
+                                <img class="card-img-top" src="assets/img/wallpaper/hotel.jpg" alt="">
+                            </div>
+                            <div class="card-body m-0 p-0">
+                                <div class="p-3">                                
+                                    <h5 class="card-title">Hotel Lorem, ipsum.</h5>
+                                    <p class="card-text p-0 hotel_description m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum nulla, dolorem soluta beatae sed fugiat?</p>
+                                    <p class="mt-1"><i class="fas fa-star mr-1 text-warning"></i><i class="fas fa-star mr-1 text-warning"></i>
+                                        <i class="fas fa-star mr-1 text-warning"></i><i class="fas fa-star mr-1 text-warning"></i>
+                                        <i class="fas fa-star mr-1 text-warning"></i>
+                                    </p>
+                                </div>
+                                <div class="btn-group w-100 rounded-pill">
+                                    <button type="button" class="btn mb-0 btn-aksi_hotel_pesan bgg-greeny text-white">Pesan</button>
+                                    <button type="button" class="btn mb-0 btn-light border-success btn-aksi_hotel_lihat">Lihat</button>
+                                </div>        
+                            </div>
+                        </div>
+
+                        <div class="card hotel_card border border-0 shadow-sm">
+                            <div class="overflow-hidden img_card_hotel position-relative">
+                                <img class="card-img-top" src="assets/img/wallpaper/hotel1.jpg" alt="">
+                            </div>
+                            <div class="card-body m-0 p-0">
+                                <div class="p-3">                                
+                                    <h5 class="card-title">Hotel Lorem, ipsum.</h5>
+                                    <p class="card-text p-0 hotel_description m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum nulla, dolorem soluta beatae sed fugiat?</p>
+                                    <p class="mt-1"><i class="fas fa-star mr-1 text-warning"></i><i class="fas fa-star mr-1 text-warning"></i>
+                                        <i class="fas fa-star mr-1 text-warning"></i><i class="fas fa-star mr-1 text-warning"></i>
+                                        <i class="fas fa-star mr-1 text-warning"></i>
+                                    </p>
+                                </div>
+                                <div class="btn-group w-100 rounded-pill">
+                                    <button type="button" class="btn mb-0 btn-aksi_hotel_pesan bgg-greeny text-white">Pesan</button>
+                                    <button type="button" class="btn mb-0 btn-light border-success btn-aksi_hotel_lihat">Lihat</button>
+                                </div>        
+                            </div>
+                        </div>
+
+                        <div class="card hotel_card border border-0 shadow-sm">
+                            <div class="overflow-hidden img_card_hotel position-relative">
+                                <img class="card-img-top" src="assets/img/wallpaper/hotel2.jpg" alt="">
+                            </div>
+                            <div class="card-body m-0 p-0">
+                                <div class="p-3">                                
+                                    <h5 class="card-title">Hotel Lorem, ipsum.</h5>
+                                    <p class="card-text p-0 hotel_description m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum nulla, dolorem soluta beatae sed fugiat?</p>
+                                    <p class="mt-1"><i class="fas fa-star mr-1 text-warning"></i><i class="fas fa-star mr-1 text-warning"></i>
+                                        <i class="fas fa-star mr-1 text-warning"></i><i class="fas fa-star mr-1 text-warning"></i>
+                                        <i class="fas fa-star mr-1 text-warning"></i>
+                                    </p>
+                                </div>
+                                <div class="btn-group w-100 rounded-pill">
+                                    <button type="button" class="btn mb-0 btn-aksi_hotel_pesan bgg-greeny text-white">Pesan</button>
+                                    <button type="button" class="btn mb-0 btn-light border-success btn-aksi_hotel_lihat">Lihat</button>
+                                </div>    
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid position-relative bg-light py-5 p-0 m-0">
+        <div class="bg-news"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-1">
+                    <h3><i class="fas fa-newspaper"></i> News</h3>
+                </div>
+                <div class="col-md-7">
+                    <div id="main_news_slider" data-aos="fade-right">
+                        <div>
+                            <div class="bgg-greeny w-100 rounded-lg overflow-hidden main_news">
+                                <img src="assets/img/wallpaper/borobudur.jpg" width="100%" alt="">
+                                <div class="main_news_description">
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, est id voluptatem explicabo modi quos laudantium molestiae quam. Culpa, perferendis?</p>
+                                </div>
+                            </div>    
+                        </div>
+                        <div>
+                            <div class="bgg-greeny w-100 rounded-lg overflow-hidden main_news">
+                                <img src="assets/img/wallpaper/borobudur.jpg" width="100%" alt="">
+                                <div class="main_news_description">
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, est id voluptatem explicabo modi quos laudantium molestiae quam. Culpa, perferendis?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="mt-3 other_news_scrollable px-2">
+                        <div data-aos="fade-right" class="other_news col-12 py-2 my-3 rounded bg-light">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="other_news_image rounded bg-dark overflow-hidden">
+                                        <img src="assets/img/wallpaper/konghucu.jpg" height="100%" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8 mt-1">
+                                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, aperiam.</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-right" class="other_news col-12 py-2 my-3 rounded bg-light">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="other_news_image rounded bg-dark overflow-hidden">
+                                        <img src="assets/img/wallpaper/konghucu.jpg" height="100%" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8 mt-1">
+                                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, aperiam.</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-right" class="other_news col-12 py-2 my-3 rounded bg-light">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="other_news_image rounded bg-dark overflow-hidden">
+                                        <img src="assets/img/wallpaper/konghucu.jpg" height="100%" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8 mt-1">
+                                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, aperiam.</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-left" class="other_news col-12 py-2 my-3 rounded bg-light">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="other_news_image rounded bg-dark overflow-hidden">
+                                        <img src="assets/img/wallpaper/konghucu.jpg" height="100%" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-8 mt-1">
+                                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, aperiam.</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-right mt-3">
+                        <button data-aos="fade-up" class="btn bgg-greeny px-5 rounded-pill text-white py-2">Lihat semua berita</button>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid position-relative" id="thanksto">
+        <img src="assets/img/decoration/cloud_footer.png" class="position-absolute decoration_footer" alt="">
+        <div class="overlay"></div>
+        <div class="container position-relative text-white" style="z-index: 20;">
+            <div class="row">
+                <div class="col-md-12 py-5 text-center mb-5">
+                    <h2>Thanks to</h2>
+                    <div class="my-5" id="sponsorship_slider">
+                        <div>
+                            <img src="assets/img/logo1 smkpng.png" class="d-inline-block" width="100px" alt="">
+                            <p class="mt-4">SMK Negeri 1 Purwosari</p>
+                        </div>
+                        <div>
+                            <img src="assets/img/Logo_kemdikbud.png" class="d-inline-block" width="150px" alt="">
+                            <p class="mt-4">Kementrian Pendidikan dan Kebudayaan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid footer py-5" id="contact_content">
+            <div class="container">
+                <div class="row text-white">
+                    <div class="col-md-4">
+                        <div class="d-flex mb-3">
+                            <img src="assets/img/favicon.png" class="d-inline" width="60px" height="60px" alt="">
+                            <div class="footer_app_name ml-2 mt-1">
+                                <h2 class="m-0 p-0">Do Lan</h2>
+                                <p class="slogan-nav m-0 p-0 slogan-footer">Happy Tourism</p>
+                            </div>
+                        </div>
+                        <p class="paraph text-justify">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga eaque totam in sit nobis, cumque officiis? Itaque quibusdam porro nulla, maxime debitis delectus quasi repellendus?
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row px-4 my-2">
+                            <div class="col-12"><p><i class="fab fa-whatsapp contact-icon mt-1 mx-4"></i>+6285 6450 27785</p></div>
+                            <div class="col-12"><p><i class="fab fa-instagram contact-icon mt-1 mx-4"></i>Oninno</p></div>
+                            <div class="col-12"><p><i class="fab fa-facebook contact-icon mt-1 mx-4"></i>Ninno</p></div>
+                            <div class="col-12"><p><i class="fas fa-envelope contact-icon mt-1 mx-4"></i>khusnul.ninno15@gmail.com</p></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <div class="col-12"><p><i class="fas fa-map-marker-alt contact-icon mt-1 mx-4"></i>Jawatimur, Pasuruan, Purwosari</p></div>
+                        
+                        <div class="text-center">
+                            <label for="email" class="mt-2">Masukkan Email untuk subscribe</label>                
+                        </div>
+                        <div class="form-group m-0 p-1 bg-real rounded-pill overflow-hidden border-0 w-100 shadow">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="form-group border-0 mb-0 py-0">
+                                        <input type="text" name="" id="email" class="form-control border-0 py-2 px-4 w-100" placeholder="Emailmuassets." aria-describedby="helpId">    
+                                    </div>
+                                </div>
+                                <div class="col-4 py-0 my-0 text-right">
+                                    <button type="submit" class="btn btn-warning px-3 btn-sm mt-1 mr-1 rounded-pill shadow">
+                                        Subscripe
+                                    </button>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid developed py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-white">
+                        <img class="d-inline" src="assets/img/Kodebekah-Logo copy.png" width="50px" alt="">
+                        <p class="d-inline ml-3 position-relative" style="top: 2px;">Developed by <a href="#">Kodeberkah</a> <i class="fas fa-heart fa-lg fa-fw ml-3 text-danger"></i> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/script.js"></script>    
+</body>
+</html>

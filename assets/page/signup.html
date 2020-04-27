@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Lan - Sigup</title>
+
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/slick-theme.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+<body>
+    
+    <header class="nav-fixed shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand mx-4 mt-1" href="#">
+                <div class="d-flex">
+                    <img src="../img/favicon.png" class="mr-1" width="40px" height="40px" alt="">
+                    <div class="greeny">
+                        <h4 class="my-0 py-0" id="app_name">Do Lan</h4>
+                        <p class="my-0 py-0 slogan-nav">Happy Tourism</p>
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-center">
+                    <li class="nav-item nav-menu">
+                        <a class="nav-link" href="../../index.html">HOME</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <button class="btn border border-success text-dark btn-sm px-4 rounded-pill" id="btn-signup" onclick="window.location.href='../page/signin.html'">Sign in</button>
+                        <button class="btn shadow active text-white btn-sm px-4 btn-greeny rounded-pill" onclick="window.location.href='../page/signup.html'">Sign up</button>
+                    </li>
+                  </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container fluid pt-5 pb-1">
+        <div class="row py-5">
+            <div class="col-md-8 offset-md-2 pt-5 pb-3 text-center">
+                <div class="border-0 shadow hotel_card card login_card d-inline-block pt-3 w-75 text-left">
+                    <div class="px-4">
+                        <div class="text-center pt-2 pb-2">
+                            <img src="../img/favicon.png" width="30px" alt="">
+                            <h4 class="text-center greeny d-inline-block position-relative" style="top: 3px;">Register</h4>
+                        </div>
+                        <div class="form-group">
+                            <label for="nama">Nama lengkap</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend bg-real">
+                                    <div class="input-group-text bg-real border-right-0 border-r-0" id="view">
+                                        <i class="fa fa-user text-gray" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <input type="text" name="nama" id="nama" class="form-control border-l-0" placeholder="Masukkan nama anda">   
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="telepon">Nomor telepon</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend bg-real">
+                                    <div class="input-group-text bg-real border-right-0 border-r-0" id="view">
+                                        <i class="fa fa-phone text-gray" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <input type="tel" name="telepon" id="telepon" class="form-control border-l-0" placeholder="Masukkan nomor telephone">   
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend bg-real">
+                                    <div class="input-group-text bg-real border-right-0 border-r-0" id="view"><i class="fa fa-envelope text-gray" aria-hidden="true"></i></div>
+                                </div>
+                                <input type="email" name="email" id="email" class="form-control border-l-0" placeholder="Masukkan email anda">   
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend bg-real">
+                                    <div class="input-group-text bg-real border-right-0 border-r-0" id="view"><i class="fa fa-key text-gray" aria-hidden="true"></i></div>
+                                </div>
+                                <input type="password" name="password" id="password" class="form-control border-l-0" placeholder="Masukkan password anda">
+                                <div class="input-group-append bg-light">
+                                    <div class="input-group-text bg-light" id="view"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Konfirmasi password</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend bg-real">
+                                    <div class="input-group-text bg-real border-right-0 border-r-0" id="view"><i class="fa fa-key text-gray" aria-hidden="true"></i></div>
+                                </div>
+                                <input type="password" name="password" id="password" class="form-control border-l-0" placeholder="Masukkan password anda">
+                                <div class="input-group-append bg-light">
+                                    <div class="input-group-text bg-light" id="view"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn bgg-greeny mt-5 w-100 rounded-pill text-white">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid developed py-3 position-relative" style="bottom: 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-white">
+                        <img class="d-inline" src="../img/Kodebekah-Logo copy.png" width="50px" alt="">
+                        <p class="d-inline ml-3 position-relative" style="top: 2px;">Developed by <a href="#">Kodeberkah</a> <i class="fas fa-heart fa-lg fa-fw ml-3 text-danger"></i> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/fontawesome.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
